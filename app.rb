@@ -1,7 +1,9 @@
 require 'sinatra'
 
-get '/' do
-  "<div style='border: 3px dashed red'>
-   <img src='http://bit.ly/1eze8aE'>
-  </div>"
+get "/" do
+  p 'Hello, World!'
+end
+
+get '/cat' do
+  erb(:index)
 end
